@@ -1,0 +1,16 @@
+.name-cards {
+    padding: 2vh;
+    article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .cont-name {
+            margin-bottom: 5vh;
+            border-radius: 20px;
+            background-color: rgba(54, 124, 204, 0.342);
+            h2 {
+                padding: 10px 50px;
+            }
+        }
+    }
+}

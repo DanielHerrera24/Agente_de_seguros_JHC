@@ -1,0 +1,137 @@
+#seccion-inicio {
+    display: flex;
+    padding: 5vh 10vh;
+
+    .dib-1 {
+        position: absolute;
+        width: 400px;
+        height: 400px;
+        top: 70px;
+        left: 0px;
+        clip-path: ellipse(33% 49% at 5% 28%);
+        background-color: rgba(236, 189, 32, 0.226);
+    }
+
+    .dib-3 {
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        top: 0px;
+        right: -150px;
+        clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+        rotate: (-40deg);
+        background-color: rgba(236, 32, 32, 0.226);
+    }
+
+    .article-inicio {
+        position: relative;
+        width: 100%;
+        padding-right: 5vh;
+        display: flex;
+        flex-direction: column;
+
+        .dib-2 {
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            top: -300px;
+            right: 0px;
+            clip-path: polygon(0% 0%, 0% 100%, 15% 100%, 15% 15%, 85% 15%, 85% 85%, 15% 85%, 13% 100%, 100% 100%, 100% 0%);
+            rotate: (60deg);
+            border-radius: 50px;
+            background-color: rgba(32, 144, 236, 0.123);
+        }
+
+        &-cta-1 {
+            padding: 50px 0 50px 0;
+
+            h1 {
+                font-weight: 600;
+                margin-bottom: 15px;
+            }
+
+            h2 {
+                display: inline;
+                padding-bottom: 20px;
+                border-bottom: 2px solid red;
+            }
+        }
+
+        &-cta-2 {
+            h3 {
+                padding-bottom: 10px;
+            }
+
+            p {
+                padding-bottom: 10px;
+            }
+        }
+
+        &-cta-3 {
+            .btn-inicio {
+                background-color: rgb(231, 144, 13);
+                border-radius: 20px;
+                width: 60%;
+                padding: 10px;
+                font-size: larger;
+                color: white;
+            }
+        }
+
+        &-img {
+            width: 100%;
+
+            .info-inicio {
+                display: flex;
+                flex-direction: column;
+
+                &-cont-img {
+                    .inicio-img {
+                        width: 100%;
+                    }
+                }
+
+                p {
+                    background-color: rgb(215, 255, 255);
+                    padding: 10px;
+                }
+            }
+        }
+    }
+}
+
+/* Max 768px */
+
+@media screen and (max-width: 768px) {
+
+    #seccion-inicio {
+        flex-direction: column;
+        padding: 2vh;
+
+        .article-inicio-cta- {
+            &1 {
+                padding: 0 0 50px 0;
+            }
+        }
+
+        .dib-1 {
+            display: none;
+        }
+
+        .dib-2 {
+            display: none;
+        }
+
+        .dib-3 {
+            display: none;
+        }
+    }
+}
+
+@media screen and (min-width: 1130px) {
+
+    #seccion-inicio {
+        padding: 2vh;
+    }
+
+}

@@ -1,0 +1,21 @@
+/* Abstracts */
+@import "./abstracts/variables";
+
+/* Base */
+@import "./base/reset";
+
+/* Componentes */
+@import "./components/cards";
+
+/* Layout */
+@import "./layout/navbar";
+@import "./layout/grid";
+@import "./layout/footer";
+
+/* Sections */
+@import "./sections/inicio";
+@import "./sections/servicios";
+@import "./sections/beneficios";
+@import "./sections/testimonios";
+@import "./sections/pf";
+@import "./sections/cta-final";

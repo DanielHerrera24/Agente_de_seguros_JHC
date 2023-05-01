@@ -1,0 +1,44 @@
+.logo-inicio {
+    height: 70px;
+}
+
+.navbar {
+    width: 100%;
+    background-color: rgb(113, 118, 255);
+    padding: 1px;
+    min-height: 70px;
+
+    &-toggler {
+        background: rgb(231, 144, 13);
+        border: none;
+        outline: none;
+    }
+
+    &-expand-md {
+        padding-right: 2vh;
+
+        .navbar-collapse {
+            flex-direction: row-reverse;
+            flex-grow: 0;
+        }
+
+        .navbar-nav {
+            .nav-link {
+                padding: 1rem 1.2rem;
+                font-size: 1.4rem;
+                position: relative;
+                color: white;
+
+                &:hover {
+                    border-top: 2px solid rgb(231, 144, 13);
+                    border-bottom: 2px solid rgb(231, 144, 13);
+                    background: #393cec;
+                }
+            }
+
+            button {
+                padding: 1.2rem 5rem;
+            }
+        }
+    }
+}

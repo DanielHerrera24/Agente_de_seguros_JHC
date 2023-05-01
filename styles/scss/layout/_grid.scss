@@ -1,0 +1,29 @@
+/* Grid */
+/* grid body */
+body {
+    min-height: 100vh;
+    display: grid;
+    grid-template-areas:
+        "header1"
+        "main"
+        "footer";
+    grid-template-columns: auto;
+    grid-template-rows: 70px auto auto;
+}
+
+/* grid items */
+header {
+    grid-area: header1;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}
+
+.row {
+    justify-content: center;
+}
